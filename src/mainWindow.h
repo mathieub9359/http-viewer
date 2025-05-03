@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QComboBox>
+#include <QLineEdit>
 
 class MainWindow : public QMainWindow
 {
@@ -12,6 +14,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
 
 private:
-    QPushButton *m_button;
+    QComboBox *m_dropdownMenu;
+    QLineEdit *m_serverInput;
+    QPushButton *m_submitButton;
 };
 #endif // MAINWINDOW_H
